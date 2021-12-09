@@ -29,7 +29,7 @@ Topformer-B | 5.1 | 1.8 | 38.3 |
 ## Usage
 Please see [mmsegmentation](https://github.com/open-mmlab/mmsegmentation/blob/master/docs/dataset_prepare.md) for dataset prepare.
 
-Fro training, run:
+For training, run:
 ```
 sh tools/dist_train.sh local_configs/topformer/<config-file> <num-of-gpus-to-use> --work-dir /path/to/save/checkpoint
 ```
