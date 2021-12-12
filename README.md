@@ -19,10 +19,13 @@ Although vision transformers (ViTs) have achieved great success in computer visi
 
 Model | Params | FLOPs | mIoU    | Link
 --- |:---:|:---:|:---:|:---: |
-Topformer-T\* | 1.4 | 0.5 | 32.5
-Topformer-T | 1.4 | 0.6 | 33.4 | 
-Topformer-S | 3.1 | 1.2 | 36.5 |
-Topformer-B | 5.1 | 1.8 | 38.3 | 
+Topformer-T_448x448_2x8_160k | 1.4 | 0.5 | 32.5 |
+Topformer-T_512x512_2x8_160k | 1.4 | 0.6 | 33.4 | 
+Topformer-T_512x512_4x8_160k | 1.4 | 0.6 | 34.6 | 
+Topformer-S_512x512_2x8_160k | 3.1 | 1.2 | 36.5 |
+Topformer-S_512x512_4x8_160k | 3.1 | 1.2 | 37.0 |
+Topformer-B_512x512_2x8_160k | 5.1 | 1.8 | 38.3 | 
+Topformer-B_512x512_4x8_160k | 5.1 | 1.8 | 39.2 | 
 
 - \* indicates results are obtained with 448 × 448 resolution as input.
 
