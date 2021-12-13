@@ -21,8 +21,7 @@ The classification models pretrained on ImageNet can be downloaded from [Baidu D
 Model | Params | FLOPs | mIoU(ss)    | Link
 --- |:---:|:---:|:---:|:---: |
 TopFormer-T_448x448_2x8_160k | 1.4 | 0.5 | 32.5 | [Baidu Drive](https://pan.baidu.com/s/1_Mvi1hyXXfBB4udkJlAiDA), [Google Drive](https://drive.google.com/file/d/1HsdinQHVKGzi8INJy29L48Ho1MmIeCZN/view?usp=sharing)
-TopFormer-T_448x448_4x8_160k | 1.4 | 0.5 | 33.4 | [Baidu Drive](https://pan.baidu.com/s/1XU43DLbEDfer8ppA9B0GxQ), [Google Drive](
-https://drive.google.com/file/d/1UW6kmt5oxssxHylGaZg5CByP7xcFrOcF/view?usp=sharing)
+TopFormer-T_448x448_4x8_160k | 1.4 | 0.5 | 33.4 | [Baidu Drive](https://pan.baidu.com/s/1XU43DLbEDfer8ppA9B0GxQ), [Google Drive](https://drive.google.com/file/d/1UW6kmt5oxssxHylGaZg5CByP7xcFrOcF/view?usp=sharing)
 TopFormer-T_512x512_2x8_160k | 1.4 | 0.6 | 33.6 | [Baidu Drive](https://pan.baidu.com/s/1-ElpFVrr1djpefKZlAb8GQ), [Google Drive](https://drive.google.com/file/d/11mxM2roRD-wXRYjw7YzKQVbQs2jsvYYw/view?usp=sharing)
 TopFormer-T_512x512_4x8_160k | 1.4 | 0.6 | 34.6 | [Baidu Drive](https://pan.baidu.com/s/1QvhPenH1Jw4m2qB7dA-ppg), [Google Drive](https://drive.google.com/file/d/1OnS3_PwjJuNMWCKisreNxw_Lma8uR8bV/view?usp=sharing)
 TopFormer-S_512x512_2x8_160k | 3.1 | 1.2 | 36.5 | [Baidu Drive](https://pan.baidu.com/s/1_lcmIShHX3q2IPvrQExfXg), [Google Drive](https://drive.google.com/file/d/16TJLt_lxJ-QvrDmYvhY_6vxRCYpyIN1n/view?usp=sharing)
