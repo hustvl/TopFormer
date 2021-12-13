@@ -16,17 +16,19 @@ Although vision transformers (ViTs) have achieved great success in computer visi
 
 
 ## Main results
+The classification models pretrained on ImageNet can be downloaded from [Baidu Drive](https://pan.baidu.com/s/1YdrU-5Z_EtL2LiSQycRO3w)/[Google Drive](https://drive.google.com/drive/folders/1NLz3QCDbaXJ2DeGxLPUfupZZbojceDJM?usp=sharing).
 
 Model | Params | FLOPs | mIoU(ss)    | Link
 --- |:---:|:---:|:---:|:---: |
-TopFormer-T_448x448_2x8_160k | 1.4 | 0.5 | 32.5 |
-TopFormer-T_448x448_4x8_160k | 1.4 | 0.5 | 33.4 |
-TopFormer-T_512x512_2x8_160k | 1.4 | 0.6 | 33.4 | 
-TopFormer-T_512x512_4x8_160k | 1.4 | 0.6 | 34.6 | 
-TopFormer-S_512x512_2x8_160k | 3.1 | 1.2 | 36.5 |
-TopFormer-S_512x512_4x8_160k | 3.1 | 1.2 | 37.0 |
-TopFormer-B_512x512_2x8_160k | 5.1 | 1.8 | 38.3 | 
-TopFormer-B_512x512_4x8_160k | 5.1 | 1.8 | 39.2 | 
+TopFormer-T_448x448_2x8_160k | 1.4 | 0.5 | 32.5 | [Baidu Drive](https://pan.baidu.com/s/1_Mvi1hyXXfBB4udkJlAiDA), [Google Drive](https://drive.google.com/file/d/1HsdinQHVKGzi8INJy29L48Ho1MmIeCZN/view?usp=sharing)
+TopFormer-T_448x448_4x8_160k | 1.4 | 0.5 | 33.4 | [Baidu Drive](https://pan.baidu.com/s/1XU43DLbEDfer8ppA9B0GxQ), [Google Drive](
+https://drive.google.com/file/d/1UW6kmt5oxssxHylGaZg5CByP7xcFrOcF/view?usp=sharing)
+TopFormer-T_512x512_2x8_160k | 1.4 | 0.6 | 33.6 | [Baidu Drive](https://pan.baidu.com/s/1-ElpFVrr1djpefKZlAb8GQ), [Google Drive](https://drive.google.com/file/d/11mxM2roRD-wXRYjw7YzKQVbQs2jsvYYw/view?usp=sharing)
+TopFormer-T_512x512_4x8_160k | 1.4 | 0.6 | 34.6 | [Baidu Drive](https://pan.baidu.com/s/1QvhPenH1Jw4m2qB7dA-ppg), [Google Drive](https://drive.google.com/file/d/1OnS3_PwjJuNMWCKisreNxw_Lma8uR8bV/view?usp=sharing)
+TopFormer-S_512x512_2x8_160k | 3.1 | 1.2 | 36.5 | [Baidu Drive](https://pan.baidu.com/s/1_lcmIShHX3q2IPvrQExfXg), [Google Drive](https://drive.google.com/file/d/16TJLt_lxJ-QvrDmYvhY_6vxRCYpyIN1n/view?usp=sharing)
+TopFormer-S_512x512_4x8_160k | 3.1 | 1.2 | 37.0 | [Baidu Drive](https://pan.baidu.com/s/1zSzJWl_044P-hYCfCJRUIA), [Google Drive](https://drive.google.com/file/d/19041fMb4HuDyNhIYdW1r5612FyzpexP0/view?usp=sharing)
+TopFormer-B_512x512_2x8_160k | 5.1 | 1.8 | 38.3 | [Baidu Drive](https://pan.baidu.com/s/1M0AVFE0NABsuWbgqRPVqNQ), [Google Drive](https://drive.google.com/file/d/1pYUUB4N6FVjXt1NKygtQis5WmhGECrNt/view?usp=sharing)
+TopFormer-B_512x512_4x8_160k | 5.1 | 1.8 | 39.2 | [Baidu Drive](https://pan.baidu.com/s/11VQWW_qTKIyjRqyNwn9lVg), [Google Drive](https://drive.google.com/file/d/1m7CxYKWAyJzl5W3cj1vwsW4DfqAb_rqz/view?usp=sharing)
 
 - \* indicates results are obtained with 448 × 448 resolution as input.
 
