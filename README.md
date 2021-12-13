@@ -17,7 +17,7 @@ Although vision transformers (ViTs) have achieved great success in computer visi
 
 ## Main results
 
-Model | Params | FLOPs | mIoU    | Link
+Model | Params | FLOPs | mIoU(ss)    | Link
 --- |:---:|:---:|:---:|:---: |
 TopFormer-T_448x448_2x8_160k | 1.4 | 0.5 | 32.5 |
 TopFormer-T_448x448_4x8_160k | 1.4 | 0.5 | 33.4 |
