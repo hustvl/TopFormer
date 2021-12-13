@@ -4,7 +4,7 @@ _base_ = [
     './topformer_tiny.py'
 ]
 
-optimizer = dict(_delete_=True, type='AdamW', lr=0.00012, betas=(0.9, 0.999), weight_decay=0.01,
+optimizer = dict(_delete_=True, type='AdamW', lr=0.0003, betas=(0.9, 0.999), weight_decay=0.01,
                  paramwise_cfg=dict(custom_keys={'absolute_pos_embed': dict(decay_mult=0.),
                                                  'head': dict(lr_mult=10.),
                                                  'norm': dict(decay_mult=0.)}))
