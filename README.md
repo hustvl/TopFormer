@@ -1,6 +1,6 @@
 # TopFormer: Token Pyramid Transformer for Mobile Semantic Segmentation
 
-The official implementation of [TopFormer: Token Pyramid Transformer for Mobile Semantic Segmentation]()
+The implementation of [TopFormer: Token Pyramid Transformer for Mobile Semantic Segmentation]()
 
 ## Introduction
 
