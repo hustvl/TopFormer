@@ -10,7 +10,7 @@ Although vision transformers (ViTs) have achieved great success in computer visi
 <img src="imgs/speed_iou.png", width=600>
 </div>
 
-<font size=2>The latency is measured on a single `Qualcomm Snapdragon 865` with input size `512×512×3`,  only an `ARM CPU` core is used for speed testing. *indicates the input size is `448×448×3`.</font>
+<font size=1>The latency is measured on a single `Qualcomm Snapdragon 865` with input size `512×512×3`,  only an `ARM CPU` core is used for speed testing. *indicates the input size is `448×448×3`.</font>
 
 ## Requirements
 
