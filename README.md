@@ -57,7 +57,7 @@ To test the inference speed in mobile device, please refer to [tnn_runtime](tnn_
 
 ## Acknowledgement
 
-The implementation is based on [MMSegmentation](https://github.com/open-mmlab/mmsegmentation/tree/master/configs/segformer).
+The implementation is based on [MMSegmentation](https://github.com/open-mmlab/mmsegmentation).
 
 ## Citation
 
