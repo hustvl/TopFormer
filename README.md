@@ -1,12 +1,12 @@
 # TopFormer: Token Pyramid Transformer for Mobile Semantic Segmentation
 
-The implementation of [TopFormer: Token Pyramid Transformer for Mobile Semantic Segmentation]()
+The implementation of [TopFormer: Token Pyramid Transformer for Mobile Semantic Segmentation]() (CVPR 2022)
 
 ## Introduction
 
 Although vision transformers (ViTs) have achieved great success in computer vision, the heavy computational cost makes it not suitable to deal with dense prediction tasks such as semantic segmentation on mobile devices. In this paper, we present a mobile-friendly architecture named **To**ken **P**yramid Vision Trans**Former**(TopFormer). The proposed TopFormer takes Tokens from various scales as input to produce scale-aware semantic features, which are then injected into the corresponding tokens to augment the representation. Experimental results demonstrate that our method significantly outperforms CNN- and ViT-based networks across several semantic segmentation datasets and achieves a good trade-off between accuracy and latency.
 <div  align="center">
-<img src="imgs/speed_iou.jpg", width=800>
+<img src="imgs/speed_iou.jpg", width=550>
 </div>
 
 ## Requirements
@@ -44,15 +44,22 @@ To evaluate, run:
 sh tools/dist_test.sh local_configs/topformer/<config-file> <checkpoint-path> <num-of-gpus-to-use>
 ```
 
+To test the inference speed in mobile device, please refer to [tnn_runtime](convert2tnn.md).
+
 ## Acknowledgement
 
-The implementation is based on [MMSegmentation](https://github.com/open-mmlab/mmsegmentation/tree/master/configs/segformer)
+The implementation is based on [MMSegmentation](https://github.com/open-mmlab/mmsegmentation/tree/master/configs/segformer).
 
 ## Citation
 
 if you find our work helpful to your experiments, please cite with:
 ```
-
+@article{zhang2022topformer,
+  title		={TopFormer: Token Pyramid Transformer for Mobile Semantic Segmentation},
+  author	={Zhang, Wenqiang and Huang, Zilong and Luo, Guozhong and Chen, Tao and Wang,  Xinggang and Liu, Wenyu and Yu, Gang and Shen, Chunhua.},
+  booktitle =   {Proc. IEEE Conf. Computer Vision and Pattern Recognition (CVPR)},
+  year      =   {2022}
+}
 ```
 
 
