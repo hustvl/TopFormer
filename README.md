@@ -39,7 +39,6 @@ TopFormer-S_512x512_4x8_160k | 3.1 | 1.2 | 37.0 | [Baidu Drive](https://pan.baid
 TopFormer-B_512x512_2x8_160k | 5.1 | 1.8 | 38.3 | [Baidu Drive](https://pan.baidu.com/s/1M0AVFE0NABsuWbgqRPVqNQ), [Google Drive](https://drive.google.com/file/d/1pYUUB4N6FVjXt1NKygtQis5WmhGECrNt/view?usp=sharing)
 TopFormer-B_512x512_4x8_160k | 5.1 | 1.8 | 39.2 | [Baidu Drive](https://pan.baidu.com/s/11VQWW_qTKIyjRqyNwn9lVg), [Google Drive](https://drive.google.com/file/d/1m7CxYKWAyJzl5W3cj1vwsW4DfqAb_rqz/view?usp=sharing)
 
-- \* indicates results are obtained with 448 × 448 resolution as input.
 - The password of Baidu Drive is `topf`
 
 ## Usage
