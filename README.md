@@ -1,6 +1,11 @@
 # TopFormer: Token Pyramid Transformer for Mobile Semantic Segmentation
 
-The implementation of [TopFormer: Token Pyramid Transformer for Mobile Semantic Segmentation]() (CVPR 2022)
+Paper Links: [TopFormer: Token Pyramid Transformer for Mobile Semantic Segmentation]() (CVPR 2022)
+
+by [Wenqiang Zhang\*](), [Zilong Huang\*](https://speedinghzl.github.io/), [Guozhong Luo](), [Tao Chen](https://scholar.google.com.sg/citations?hl=en&user=w3OoFL0AAAAJ&view_op=list_works&sortby=pubdate), [Xinggang Wang](https://xinggangw.info/)<span>&#8224;</span>, [Wenyu Liu](http://eic.hust.edu.cn/professor/liuwenyu/)<span>&#8224;</span>, [Gang Yu](https://scholar.google.com/citations?user=BJdigYsAAAAJ&hl=zh-CN), [Chunhua Shen](https://cshen.github.io/).
+>
+>(\*) equal contribution, (†) corresponding author.
+>
 
 ## Introduction
 
@@ -20,6 +25,8 @@ Although vision transformers (ViTs) have achieved great success in computer visi
 
 ## Main results
 The classification models pretrained on ImageNet can be downloaded from [Baidu Drive](https://pan.baidu.com/s/1YdrU-5Z_EtL2LiSQycRO3w)/[Google Drive](https://drive.google.com/drive/folders/1NLz3QCDbaXJ2DeGxLPUfupZZbojceDJM?usp=sharing).
+
+**ADE20K**
 
 Model | Params | FLOPs(G) | mIoU(ss)    | Link
 --- |:---:|:---:|:---:|:---: |
