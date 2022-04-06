@@ -33,7 +33,7 @@ TopFormer-B_512x512_4x8_160k | 5.1 | 1.8 | 39.2 | [Baidu Drive](https://pan.baid
 - The password of Baidu Drive is topf
 
 ## Usage
-Please see [mmsegmentation](https://github.com/open-mmlab/mmsegmentation/blob/master/docs/dataset_prepare.md) for dataset prepare.
+Please see [mmsegmentation](https://github.com/open-mmlab/mmsegmentation/blob/master/docs/en/dataset_prepare.md) for dataset prepare.
 
 For training, run:
 ```
@@ -55,10 +55,10 @@ The implementation is based on [MMSegmentation](https://github.com/open-mmlab/mm
 if you find our work helpful to your experiments, please cite with:
 ```
 @article{zhang2022topformer,
-  title		={TopFormer: Token Pyramid Transformer for Mobile Semantic Segmentation},
-  author	={Zhang, Wenqiang and Huang, Zilong and Luo, Guozhong and Chen, Tao and Wang,  Xinggang and Liu, Wenyu and Yu, Gang and Shen, Chunhua.},
-  booktitle =   {Proc. IEEE Conf. Computer Vision and Pattern Recognition (CVPR)},
-  year      =   {2022}
+  title     = {TopFormer: Token Pyramid Transformer for Mobile Semantic Segmentation},
+  author    = {Zhang, Wenqiang and Huang, Zilong and Luo, Guozhong and Chen, Tao and Wang,  Xinggang and Liu, Wenyu and Yu, Gang and Shen, Chunhua.},
+  booktitle = {Proc. IEEE Conf. Computer Vision and Pattern Recognition (CVPR)},
+  year      = {2022}
 }
 ```
 
