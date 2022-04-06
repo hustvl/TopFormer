@@ -348,7 +348,7 @@ class InjectionMultiSum(nn.Module):
         x_g: global features
         x_l: local features
         '''
-        B, C, H, W = x_l.shape
+        B, C, H, W = get_shape(x_l)
         local_feat = self.local_embedding(x_l)
         
         global_act = self.global_act(x_g)
@@ -477,8 +477,9 @@ class SimpleHead(BaseModule):
     
     def agg_res(self, preds):
         outs = preds[0]
+        data_size = get_shape(outs)[2:]
         for pred in preds[1:]:
-            pred = resize(pred, size=outs.size()[2:], mode='bilinear', align_corners=False)
+            pred = resize(pred, size=data_size, mode='bilinear', align_corners=False)
             outs += pred
         return outs
 
