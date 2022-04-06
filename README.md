@@ -21,7 +21,7 @@ Although vision transformers (ViTs) have achieved great success in computer visi
 ## Main results
 The classification models pretrained on ImageNet can be downloaded from [Baidu Drive](https://pan.baidu.com/s/1YdrU-5Z_EtL2LiSQycRO3w)/[Google Drive](https://drive.google.com/drive/folders/1NLz3QCDbaXJ2DeGxLPUfupZZbojceDJM?usp=sharing).
 
-Model | Params | FLOPs | mIoU(ss)    | Link
+Model | Params | FLOPs(G) | mIoU(ss)    | Link
 --- |:---:|:---:|:---:|:---: |
 TopFormer-T_448x448_2x8_160k | 1.4 | 0.5 | 32.5 | [Baidu Drive](https://pan.baidu.com/s/1_Mvi1hyXXfBB4udkJlAiDA), [Google Drive](https://drive.google.com/file/d/1HsdinQHVKGzi8INJy29L48Ho1MmIeCZN/view?usp=sharing)
 TopFormer-T_448x448_4x8_160k | 1.4 | 0.5 | 33.4 | [Baidu Drive](https://pan.baidu.com/s/1XU43DLbEDfer8ppA9B0GxQ), [Google Drive](https://drive.google.com/file/d/1UW6kmt5oxssxHylGaZg5CByP7xcFrOcF/view?usp=sharing)
