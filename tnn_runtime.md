@@ -1,4 +1,4 @@
-## Topformer-TNNRuntime
+## TopFormer-TNNRuntime
 
 The doc introduces how to convert models into TNN.
 
