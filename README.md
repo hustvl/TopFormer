@@ -44,7 +44,7 @@ To evaluate, run:
 sh tools/dist_test.sh local_configs/topformer/<config-file> <checkpoint-path> <num-of-gpus-to-use>
 ```
 
-To test the inference speed in mobile device, please refer to [tnn_runtime](convert2tnn.md).
+To test the inference speed in mobile device, please refer to [tnn_runtime](tnn_runtime.md).
 
 ## Acknowledgement
 
