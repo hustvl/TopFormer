@@ -28,7 +28,7 @@ The classification models pretrained on ImageNet can be downloaded from [Baidu D
 
 **ADE20K**
 
-Model | Params | FLOPs(G) | mIoU(ss)    | Link
+Model | Params(M) | FLOPs(G) | mIoU(ss)    | Link
 --- |:---:|:---:|:---:|:---: |
 TopFormer-T_448x448_2x8_160k | 1.4 | 0.5 | 32.5 | [Baidu Drive](https://pan.baidu.com/s/1_Mvi1hyXXfBB4udkJlAiDA), [Google Drive](https://drive.google.com/file/d/1HsdinQHVKGzi8INJy29L48Ho1MmIeCZN/view?usp=sharing)
 TopFormer-T_448x448_4x8_160k | 1.4 | 0.5 | 33.4 | [Baidu Drive](https://pan.baidu.com/s/1XU43DLbEDfer8ppA9B0GxQ), [Google Drive](https://drive.google.com/file/d/1UW6kmt5oxssxHylGaZg5CByP7xcFrOcF/view?usp=sharing)
@@ -38,7 +38,7 @@ TopFormer-S_512x512_2x8_160k | 3.1 | 1.2 | 36.5 | [Baidu Drive](https://pan.baid
 TopFormer-S_512x512_4x8_160k | 3.1 | 1.2 | 37.0 | [Baidu Drive](https://pan.baidu.com/s/1zSzJWl_044P-hYCfCJRUIA), [Google Drive](https://drive.google.com/file/d/19041fMb4HuDyNhIYdW1r5612FyzpexP0/view?usp=sharing)
 TopFormer-B_512x512_2x8_160k | 5.1 | 1.8 | 38.3 | [Baidu Drive](https://pan.baidu.com/s/1M0AVFE0NABsuWbgqRPVqNQ), [Google Drive](https://drive.google.com/file/d/1pYUUB4N6FVjXt1NKygtQis5WmhGECrNt/view?usp=sharing)
 TopFormer-B_512x512_4x8_160k | 5.1 | 1.8 | 39.2 | [Baidu Drive](https://pan.baidu.com/s/11VQWW_qTKIyjRqyNwn9lVg), [Google Drive](https://drive.google.com/file/d/1m7CxYKWAyJzl5W3cj1vwsW4DfqAb_rqz/view?usp=sharing)
-
+- `ss` indicates single-scale.
 - The password of Baidu Drive is `topf`
 
 ## Usage
