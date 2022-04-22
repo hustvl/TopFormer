@@ -12,10 +12,14 @@ by [Wenqiang Zhang\*](), [Zilong Huang\*](https://speedinghzl.github.io/), [Guoz
 Although vision transformers (ViTs) have achieved great success in computer vision, the heavy computational cost makes it not suitable to deal with dense prediction tasks such as semantic segmentation on mobile devices. In this paper, we present a mobile-friendly architecture named **To**ken **P**yramid Vision Trans**Former**(**TopFormer**). The proposed TopFormer takes Tokens from various scales as input to produce scale-aware semantic features, which are then injected into the corresponding tokens to augment the representation. Experimental results demonstrate that our method significantly outperforms CNN- and ViT-based networks across several semantic segmentation datasets and achieves a good trade-off between accuracy and latency.
 
 <div  align="center">
-<img src="imgs/speed_iou.png", width=600>
+<img src="imgs/speed_iou.png", width=550>
 </div>
 
 <font size=1>The latency is measured on a single `Qualcomm Snapdragon 865` with input size `512×512×3`,  only an `ARM CPU` core is used for speed testing. *indicates the input size is `448×448×3`.</font>
+
+## Updates
+
+- **04/22/2022**: TopFormer backbone has been integrated into [PaddleViT](https://github.com/BR-IDL/PaddleViT), checkout [here](https://github.com/BR-IDL/PaddleViT/tree/develop/image_classification/TopFormer.) for the 3rd party implementation on Paddle framework!
 
 ## Requirements
 
