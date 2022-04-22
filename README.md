@@ -19,7 +19,7 @@ Although vision transformers (ViTs) have achieved great success in computer visi
 
 ## Updates
 
-- **04/22/2022**: TopFormer backbone has been integrated into [PaddleViT](https://github.com/BR-IDL/PaddleViT), checkout [here](https://github.com/BR-IDL/PaddleViT/tree/develop/image_classification/TopFormer.) for the 3rd party implementation on Paddle framework!
+- **04/23/2022**: TopFormer backbone has been integrated into [PaddleViT](https://github.com/BR-IDL/PaddleViT), checkout [here](https://github.com/BR-IDL/PaddleViT/tree/develop/image_classification/TopFormer) for the 3rd party implementation on Paddle framework!
 
 ## Requirements
 
