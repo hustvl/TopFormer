@@ -87,6 +87,7 @@ class ONNXRuntimeSegmentor(BaseSegmentor):
         if not (ori_shape[0] == seg_pred.shape[-2]
                 and ori_shape[1] == seg_pred.shape[-1]):
             seg_pred = torch.from_numpy(seg_pred).float()
+            seg_pred = seg_pred.argmax(dim=1).unsqueeze(0)
             seg_pred = resize(
                 seg_pred, size=tuple(ori_shape[:2]), mode='nearest')
             seg_pred = seg_pred.long().detach().cpu().numpy()
@@ -168,6 +169,12 @@ def parse_args() -> argparse.Namespace:
         nargs='+',
         help='evaluation metrics, which depends on the dataset, e.g., "mIoU"'
         ' for generic datasets, and "cityscapes" for Cityscapes')
+    parser.add_argument(
+        '--shape',
+        type=int,
+        nargs='+',
+        default=None,
+        help='input image height and width.')
     parser.add_argument('--show', action='store_true', help='show results')
     parser.add_argument(
         '--show-dir', help='directory where painted images will be saved')
@@ -210,6 +217,17 @@ def main():
         cfg.merge_from_dict(args.options)
     cfg.model.pretrained = None
     cfg.data.test.test_mode = True
+    if args.shape is None:
+        img_scale = cfg.test_pipeline[1]['img_scale']
+        input_shape = (1, 3, img_scale[1], img_scale[0])
+    elif len(args.shape) == 1:
+        input_shape = (1, 3, args.shape[0], args.shape[0])
+    elif len(args.shape) == 2:
+        input_shape = (1, 3, ) + tuple(args.shape)
+    else:
+        raise ValueError('invalid input shape')
+    cfg.data.test.pipeline[1]['img_scale'] = (input_shape[2], input_shape[3])
+    cfg.data.test.pipeline[1]['transforms'][0]['keep_ratio'] = False
 
     # init distributed env first, since logger depends on the dist info.
     distributed = False
