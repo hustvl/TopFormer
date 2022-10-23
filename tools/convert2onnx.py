@@ -1,5 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import argparse
+import os
 
 import numpy as np
 
@@ -534,7 +535,7 @@ def pytorch2onnx(model,
                  mm_inputs,
                  show=False,
                  output_file='tmp.onnx',
-                 num_classes=150):
+                 onnxsim=False):
     model.cpu().eval()
     imgs = mm_inputs.pop('imgs')
 
@@ -549,6 +550,27 @@ def pytorch2onnx(model,
             keep_initializers_as_inputs=False,
             verbose=show)
         print(f'Successfully exported ONNX model: {output_file}')
+    
+    if onnxsim:
+        import onnx
+
+        from onnxsim import simplify
+
+        print(f'Simplifying the {output_file}...')
+
+        # use onnxsimplify to reduce reduent model.
+        onnx_model = onnx.load(output_file)
+
+        model_simp, check = simplify(onnx_model)
+
+        assert check, "Simplified ONNX model could not be validated"
+
+        stem, suffix = os.path.splitext(output_file)
+        outsim_file = stem + '-sim' + suffix
+
+        onnx.save(model_simp, outsim_file)
+
+        print(f'Successfully simplify the model: {outsim_file}')
 
 
 def parse_args():
@@ -561,6 +583,7 @@ def parse_args():
         '--show',
         action='store_true',
         help='show onnx graph and segmentation results')
+    parser.add_argument("--onnxsim", action="store_true", help="use onnxsim or not")
     parser.add_argument('--output-file', type=str, default='tmp.onnx')
     parser.add_argument('--opset-version', type=int, default=11)
     parser.add_argument(
@@ -613,4 +636,6 @@ if __name__ == '__main__':
         mm_inputs = _demo_mm_inputs(input_shape, num_classes=150)
 
     # convert model to onnx file
-    pytorch2onnx(segmentor, mm_inputs, show=args.show, output_file=args.output_file)
+    pytorch2onnx(segmentor, mm_inputs, show=args.show, output_file=args.output_file, onnxsim=args.onnxsim)
+
+
