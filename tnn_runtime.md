@@ -4,8 +4,9 @@ The doc introduces how to convert models into TNN.
 
 **step 1**, convert your model to ONNX, run:
 
-```
+```shell
 python3 tools/convert2onnx.py <config-file> --input-img <img-dir> --shape 512 512 --checkpoint <model-ckpt>
+# if you want to use onnxsim, you could invoke it just by adding `--onnxsim`
 ```
 
 **step 2**, clone the TNN:
